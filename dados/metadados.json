@@ -1,0 +1,409 @@
+{
+ "universo": {
+  "linhas_de_voto_2025": 175067,
+  "votacoes_com_voto_nominal_2025": 550,
+  "deputados_com_voto_2025": 551,
+  "votacoes_cadastradas_2025": 17026
+ },
+ "fonte": "Dados Abertos da Câmara dos Deputados - arquivos votacoesVotos-2025.csv, votacoes-2025.csv e votacoesProposicoes-2025.csv",
+ "baixado_em": "2026-11-16T02:04:12.735Z",
+ "deputados_nas_20_votacoes": 547,
+ "deputados_com_min_votos": 505,
+ "min_votos": 10,
+ "instancias": 388,
+ "classes": [
+  {
+   "partido": "PL",
+   "classe": "PL",
+   "n": 86
+  },
+  {
+   "partido": "PT",
+   "classe": "PT",
+   "n": 67
+  },
+  {
+   "partido": "UNIÃO",
+   "classe": "UNIAO",
+   "n": 59
+  },
+  {
+   "partido": "PP",
+   "classe": "PP",
+   "n": 49
+  },
+  {
+   "partido": "REPUBLICANOS",
+   "classe": "REPUBLICANOS",
+   "n": 43
+  },
+  {
+   "partido": "PSD",
+   "classe": "PSD",
+   "n": 43
+  },
+  {
+   "partido": "MDB",
+   "classe": "MDB",
+   "n": 41
+  }
+ ],
+ "partidos_fora": [
+  {
+   "partido": "PODE",
+   "n": 18
+  },
+  {
+   "partido": "PSB",
+   "n": 16
+  },
+  {
+   "partido": "PDT",
+   "n": 16
+  },
+  {
+   "partido": "PSOL",
+   "n": 13
+  },
+  {
+   "partido": "PSDB",
+   "n": 13
+  },
+  {
+   "partido": "PCdoB",
+   "n": 9
+  },
+  {
+   "partido": "AVANTE",
+   "n": 8
+  },
+  {
+   "partido": "SOLIDARIEDADE",
+   "n": 5
+  },
+  {
+   "partido": "NOVO",
+   "n": 5
+  },
+  {
+   "partido": "PRD",
+   "n": 5
+  },
+  {
+   "partido": "PV",
+   "n": 4
+  },
+  {
+   "partido": "CIDADANIA",
+   "n": 4
+  },
+  {
+   "partido": "REDE",
+   "n": 1
+  }
+ ],
+ "faltantes": 940,
+ "celulas": 7760,
+ "votacoes": [
+  {
+   "atributo": "pec_prerrogativas_1turno",
+   "id": "2270800-135",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2270800-135",
+   "data": "2025-09-16",
+   "orgao": "PLEN",
+   "sim": 353,
+   "nao": 134,
+   "outros": 1,
+   "descricao": "Aprovado, em primeiro turno, o Substitutivo Reformulado à Proposta de Emenda à Constituição nº 3, de 2021, adotado pelo Relator da Comissão Especial. Sim: 353; Não: 134; Abstenção: 1; Total: 488.",
+   "proposicao": "PEC 3/2021",
+   "ementa": "Altera os arts. 14, 27, 53, 102 e 105 da Constituição Federal, para dispor sobre as prerrogativas parlamentares e dá outras providências.",
+   "sim_amostra": 291,
+   "nao_amostra": 79
+  },
+  {
+   "atributo": "pl_antifaccao_substitutivo",
+   "id": "2579832-62",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-62",
+   "data": "2025-11-18",
+   "orgao": "PLEN",
+   "sim": 370,
+   "nao": 110,
+   "outros": 4,
+   "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 5.582, de 2025, adotado pelo relator da Comissão de Segurança Pública e Combate ao Crime Organizado, ressalvados os destaques. Sim: 370; Não: 110; Abstenção: 3; Total: 483.",
+   "proposicao": "PL 5582/2025",
+   "ementa": "Altera a Lei nº 12.850, de 2 de agosto de 2013, o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, o Decreto-Lei nº 3.689, de 3 de outubro de 1941 – Código de Processo Penal, a Lei nº 8.072, de 25 de julho de 1990, a Lei nº 7.960, de 21 de dezembro de 1989, e a Lei nº 7.210, de 11 de julho de 1984, para dispor sobre o combate às organizações criminosas no País.",
+   "sim_amostra": 291,
+   "nao_amostra": 71
+  },
+  {
+   "atributo": "pdl_susta_decreto_12466",
+   "id": "2515648-44",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2515648-44",
+   "data": "2025-06-25",
+   "orgao": "PLEN",
+   "sim": 383,
+   "nao": 98,
+   "outros": 1,
+   "descricao": "Aprovado o Substitutivo ao Projeto de Decreto Legislativo nº 214, de 2025, adotado pelo relator da Comissão de Constituição e Justiça e de Cidadania. Sim: 383; Não: 98; Total: 481.",
+   "proposicao": "PDL 214/2025",
+   "ementa": "Susta, nos termos do art. 49, V, da Constituição Federal, os efeitos do Decreto nº 12.466, de 22 de maio de 2025.",
+   "sim_amostra": 291,
+   "nao_amostra": 68
+  },
+  {
+   "atributo": "plp_numero_de_deputados",
+   "id": "2383019-54",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2383019-54",
+   "data": "2025-05-06",
+   "orgao": "PLEN",
+   "sim": 270,
+   "nao": 207,
+   "outros": 1,
+   "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 177, de 2023, adotado pelo relator da Comissão de Finanças e Tributação. Sim: 270; Não: 207; Abstenção: 1; Total: 478.",
+   "proposicao": "PLP 177/2023",
+   "ementa": "Altera a redação da Lei Complementar nº 78, de 30 de dezembro de 1993.",
+   "sim_amostra": 208,
+   "nao_amostra": 149
+  },
+  {
+   "atributo": "urgencia_pl_anistia",
+   "id": "2562149-7",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2562149-7",
+   "data": "2025-09-17",
+   "orgao": "PLEN",
+   "sim": 311,
+   "nao": 163,
+   "outros": 8,
+   "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 311; Não: 163; Abstenção: 7; Total: 481.",
+   "proposicao": "REQ 3834/2025",
+   "ementa": "Requer, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, Regime de Urgência para o PL 2162/2023.",
+   "sim_amostra": 261,
+   "nao_amostra": 104
+  },
+  {
+   "atributo": "mpv1303_tributacao_aplicacoes_req",
+   "id": "2525180-26",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2525180-26",
+   "data": "2025-10-08",
+   "orgao": "PLEN",
+   "sim": 251,
+   "nao": 193,
+   "outros": 1,
+   "descricao": "Aprovado o Requerimento. Sim: 251; Não: 193; Total: 444.",
+   "proposicao": "MPV 1303/2025",
+   "ementa": "Dispõe sobre a tributação de aplicações financeiras e ativos virtuais no País e dá outras providências.",
+   "sim_amostra": 219,
+   "nao_amostra": 115
+  },
+  {
+   "atributo": "pl_streaming_subemenda",
+   "id": "2157806-137",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2157806-137",
+   "data": "2025-11-04",
+   "orgao": "PLEN",
+   "sim": 330,
+   "nao": 118,
+   "outros": 4,
+   "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei nº 8.889, de 2017, adotada pelo relator da Comissão Especial, ressalvados os destaques.  Sim: 330; Não: 118; Abstenção: 3; Total: 451.",
+   "proposicao": "PL 8889/2017",
+   "ementa": "Dispõe sobre a provisão de conteúdo audiovisual por demanda (CAvD) e dá outras providências.",
+   "sim_amostra": 239,
+   "nao_amostra": 101
+  },
+  {
+   "atributo": "plp_restos_a_pagar",
+   "id": "2485066-33",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2485066-33",
+   "data": "2025-03-18",
+   "orgao": "PLEN",
+   "sim": 347,
+   "nao": 114,
+   "outros": 1,
+   "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 22, de 2025, adotado pelo relator da Comissão de Finanças e Tributação. Sim: 347; Não: 114; Total: 461.",
+   "proposicao": "PLP 22/2025",
+   "ementa": "Dispõe sobre extensão do prazo para liquidação de restos a pagar não processados de que trata o art. 172 da Lei nº 14.791, de 29 de dezembro de 2023 (Lei de Diretrizes Orçamentárias de 2024).",
+   "sim_amostra": 280,
+   "nao_amostra": 66
+  },
+  {
+   "atributo": "sap1_sustacao_acao_penal",
+   "id": "2494565-52",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2494565-52",
+   "data": "2025-05-07",
+   "orgao": "PLEN",
+   "sim": 315,
+   "nao": 143,
+   "outros": 5,
+   "descricao": "Aprovado o parecer da Comissão de Constituição e Justiça e de Cidadania à Sustação de Andamento de Ação Penal nº 1, de 2025, pela sustação do andamento da Ação Penal. . Sim: 315; Não: 143; Abstenção: 4; Total: 462.",
+   "proposicao": "SAP 1/2025",
+   "ementa": "Requerimento de autoria do Partido Liberal (PL), protocolizado em 1º de abril de 2025. Sustação do andamento de Ação Penal decorrente do recebimento da denúncia contida na Petição n. 12.100, em trâmite no Supremo Tribunal Federal, em desfavor do Senhor Deputado DELEGADO RAMAGEM.",
+   "sim_amostra": 264,
+   "nao_amostra": 88
+  },
+  {
+   "atributo": "sap2_sustacao_acao_penal",
+   "id": "2564763-24",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2564763-24",
+   "data": "2025-10-15",
+   "orgao": "PLEN",
+   "sim": 268,
+   "nao": 167,
+   "outros": 5,
+   "descricao": "Aprovado o parecer da Comissão de Constituição e Justiça e de Cidadania à Sustação de Andamento de Ação Penal nº 2, de 2025, pela sustação do andamento da Ação Penal.  Sim: 268; Não: 167; Abstenção: 4; Total: 439.",
+   "proposicao": "SAP 2/2025",
+   "ementa": "REQUERIMENTO DE INSTAURAÇÃO, POR INICIATIVA DE PARTIDO POLÍTICO COM REPRESENTAÇÃO NA CÂMARA DOS DEPUTADOS, NOS TERMOS DO ART. 53, § 30 DA CONSTITUIÇÃO FEDERAL, DE PROPOSIÇÃO PARA QUE A CASA LEGISLATIVA DELIBERE ACERCA DA SUSTAÇÃO DA AÇÃO PENAL INAUGURADA COM O RECEBIMENTO DE DENÚNCIA, PELA PRIMEIRA TURMA DO SUPREMO TRIBUNAL FEDERAL, CONTRA O DEPUTADO GUSTAVO GAYER MACHADO DE ARAÚJO (PL/GO), NO ÂMBITO DA PET 10.972 (AP 2652).",
+   "sim_amostra": 238,
+   "nao_amostra": 98
+  },
+  {
+   "atributo": "rec_pl702_processo_penal",
+   "id": "2408145-17",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2408145-17",
+   "data": "2025-07-16",
+   "orgao": "PLEN",
+   "sim": 291,
+   "nao": 173,
+   "outros": 2,
+   "descricao": "Aprovado o Recurso nº 38/2023 (art. 58, § 1º c/c art. 132, § 2º, RICD). Sim: 291; Não: 173; Total: 464.",
+   "proposicao": "PL 702/2023",
+   "ementa": "Acrescenta o art. 394-B ao Decreto-Lei nº 3.689, de 3 de outubro de 1941 - Código de Processo Penal, para dar prioridade de tramitação nos crimes de redução a condição análoga à de escravo.",
+   "sim_amostra": 245,
+   "nao_amostra": 110
+  },
+  {
+   "atributo": "urgencia_pl_invasores_propriedade",
+   "id": "2411961-13",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2411961-13",
+   "data": "2025-07-16",
+   "orgao": "PLEN",
+   "sim": 347,
+   "nao": 107,
+   "outros": 1,
+   "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 347; Não: 107; Total: 454.",
+   "proposicao": "PL 8262/2017",
+   "ementa": "Dispõe sobre a retirada de invasores de propriedade privada.",
+   "sim_amostra": 282,
+   "nao_amostra": 69
+  },
+  {
+   "atributo": "plp163_limite_despesas_educacao_saude",
+   "id": "2541109-38",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2541109-38",
+   "data": "2025-09-24",
+   "orgao": "PLEN",
+   "sim": 296,
+   "nao": 145,
+   "outros": 2,
+   "descricao": "Aprovado o Projeto de Lei Complementar nº 163, de 2025, ressalvados os destaques. Sim: 296; Não: 145; Abstenção: 2; Total: 443.",
+   "proposicao": "PLP 163/2025",
+   "ementa": "Altera a Lei Complementar nº 200, de 30 de agosto de 2023, para excluir do cômputo dos limites de despesas primárias as despesas temporárias com educação pública e saúde de que trata o art. 6º da Lei nº 15.164, de 14 de julho de 2025, e as despesas financiadas com recursos oriundos de empréstimos internacionais e suas respectivas contrapartidas, bem como excluir as referidas despesas com educação pública e saúde das metas fiscais, e dá outras providências.",
+   "sim_amostra": 201,
+   "nao_amostra": 130
+  },
+  {
+   "atributo": "pl1924_desenvolvimento_infantil_emenda2",
+   "id": "2501358-48",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2501358-48",
+   "data": "2025-10-14",
+   "orgao": "PLEN",
+   "sim": 246,
+   "nao": 199,
+   "outros": 1,
+   "descricao": "Aprovada a Emenda de Plenário nº 2. Sim: 246; Não: 199; Total: 445.",
+   "proposicao": "PL 1924/2025",
+   "ementa": "Institui a Estratégia de Desenvolvimento Infantil (EDI 0-5).",
+   "sim_amostra": 211,
+   "nao_amostra": 128
+  },
+  {
+   "atributo": "pl6366_dia_defensores_dh_destaque",
+   "id": "2233324-100",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233324-100",
+   "data": "2025-05-26",
+   "orgao": "PLEN",
+   "sim": 231,
+   "nao": 202,
+   "outros": 10,
+   "descricao": "Mantido o texto. Sim: 231; Não: 202; Abstenção: 8; Total: 441.",
+   "proposicao": "PL 6366/2019",
+   "ementa": "Institui o Dia Nacional das Defensoras e Defensores de Direitos Humanos.",
+   "sim_amostra": 156,
+   "nao_amostra": 172
+  },
+  {
+   "atributo": "prc86_glauber_braga_emenda1",
+   "id": "2595686-31",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2595686-31",
+   "data": "2025-12-10",
+   "orgao": "PLEN",
+   "sim": 318,
+   "nao": 141,
+   "outros": 4,
+   "descricao": "Aprovada a Emenda de Plenário nº 1. Sim: 318; Não: 141; Abstenção: 3; Total: 462.",
+   "proposicao": "PRC 86/2025",
+   "ementa": "Declara a perda do mandato do Deputado GLAUBER BRAGA. por procedimento incompatível com o decoro parlamentar.",
+   "sim_amostra": 221,
+   "nao_amostra": 124
+  },
+  {
+   "atributo": "rep2_carla_zambelli_parecer",
+   "id": "2525122-81",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2525122-81",
+   "data": "2025-12-10",
+   "orgao": "PLEN",
+   "sim": 227,
+   "nao": 170,
+   "outros": 11,
+   "descricao": "Rejeitado o Parecer da Comissão de Constituição e Justiça e de Cidadania à Representação nº 2, de 2025, que conclui pela procedência da representação e pela perda do mandato da Dep. Carla Zambelli. Sim: 227; Não: 170; Abstenção: 10; Total: 407.",
+   "proposicao": "REP 2/2025",
+   "ementa": "Representa em desfavor da Senhora Deputada CARLA ZAMBELLI, em razão de condenação criminal transitada em julgado.",
+   "sim_amostra": 149,
+   "nao_amostra": 150
+  },
+  {
+   "atributo": "urgencia_pl_agroecologia",
+   "id": "2579999-8",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579999-8",
+   "data": "2025-11-03",
+   "orgao": "PLEN",
+   "sim": 236,
+   "nao": 178,
+   "outros": 1,
+   "descricao": "Rejeitado o Requerimento de Urgência (Art. 155 do RICD). Sim: 236; Não: 178; Total: 414.",
+   "proposicao": "PL 3904/2023",
+   "ementa": "Institui a Política Nacional de Agroecologia e Produção Orgânica.",
+   "sim_amostra": 146,
+   "nao_amostra": 164
+  },
+  {
+   "atributo": "pdl3_susta_resolucao_conanda_req",
+   "id": "2482078-54",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2482078-54",
+   "data": "2025-11-05",
+   "orgao": "PLEN",
+   "sim": 310,
+   "nao": 120,
+   "outros": 2,
+   "descricao": "Aprovado o Requerimento. Sim: 310; Não: 120; Abstenção: 1; Total: 431.",
+   "proposicao": "PDL 3/2025",
+   "ementa": "Susta os efeitos da Resolução nº 258, de 23 de dezembro de 2024, do Conselho Nacional dos Direitos da Criança e do Adolescente (CONANDA).",
+   "sim_amostra": 263,
+   "nao_amostra": 70
+  },
+  {
+   "atributo": "pl_dia_acao_climatica",
+   "id": "2438467-47",
+   "uri": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2438467-47",
+   "data": "2025-02-12",
+   "orgao": "PLEN",
+   "sim": 273,
+   "nao": 136,
+   "outros": 1,
+   "descricao": "Aprovado o Projeto de Lei nº 2.215, de 2024. Sim: 273; Não: 136; Total: 409.",
+   "proposicao": "PL 2215/2024",
+   "ementa": "Institui o Dia Nacional para a Ação Climática.",
+   "sim_amostra": 185,
+   "nao_amostra": 123
+  }
+ ]
+}

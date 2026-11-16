@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Votos da Câmara no WEKA</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,700&display=swap" rel="stylesheet">
+<style>
+/* Layout: coluna unica de leitura; numeros-chave no topo, depois figuras e tabelas. Tema unico claro (as figuras sao PNG claros). */
+:root{--bg:#f2f4f7;--surface:#fff;--ink:#18212d;--muted:#5a6675;--line:#d5dbe3;--accent:#1f3a5f;--soft:#dde5ef;
+  --display:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;color-scheme:light}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--body)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 20px 56px;display:flex;flex-direction:column;gap:22px}
+h1{font:700 32px/1.12 var(--display);margin:0;text-wrap:balance}
+h2{font:700 20px/1.2 var(--display);margin:0;text-wrap:balance}
+p{margin:0;max-width:68ch}.sub{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi b{display:block;font:700 28px/1.1 var(--display);font-variant-numeric:tabular-nums;color:var(--accent)}
+.kpi span{font-size:13px;color:var(--muted)}
+img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{font:500 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tr.best td{background:var(--soft);font-weight:600}
+code{font:400 13px var(--mono);background:var(--soft);padding:1px 5px;border-radius:4px}
+pre{font:400 12.5px/1.5 var(--mono);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto;margin:0}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;max-width:68ch}
+a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <span class="sub" style="font:500 13px var(--mono)">Inteligência Artificial · Redes Neurais no WEKA</span>
+    <h1>Uma rede neural consegue identificar o partido de um deputado pelos seus votos?</h1>
+    <p class="sub">Rede MLP treinada no WEKA com 20 votações nominais do Plenário da Câmara dos Deputados em 2025. Dados do portal Dados Abertos da Câmara.</p>
+  </header>
+  <section class="kpis" id="kpis"></section>
+  <section class="card">
+    <h2>O que a rede acerta e o que ela confunde</h2>
+    <p>Linhas são o partido real, colunas o partido previsto. A rede reconhece todos os deputados do PT e a maioria dos do PL, e confunde entre si os partidos de centro, que votaram de forma parecida.</p>
+    <img src="figuras/fig4_matriz_confusao.png" alt="Matriz de confusão da melhor rede">
+    <div class="tw"><table id="classes"></table></div>
+  </section>
+  <section class="card">
+    <h2>Arquitetura</h2>
+    <p>Mais neurônios e mais camadas aumentam o acerto no conjunto de treino, mas não na validação cruzada.</p>
+    <img src="figuras/fig1_arquitetura.png" alt="Acerto por arquitetura">
+    <div class="tw"><table id="t-arquitetura"></table></div>
+  </section>
+  <section class="card">
+    <h2>Taxa de aprendizado</h2>
+    <p>Foi o ajuste que mais importou: a taxa mais baixa deu o melhor resultado.</p>
+    <img src="figuras/fig2_taxa.png" alt="Acerto por taxa de aprendizado">
+    <div class="tw"><table id="t-taxa"></table></div>
+  </section>
+  <section class="card">
+    <h2>Tempo de treinamento</h2>
+    <p>Treinar por mais épocas faz a rede decorar o conjunto de treino sem generalizar melhor.</p>
+    <img src="figuras/fig3_tempo.png" alt="Acerto por tempo de treinamento">
+    <div class="tw"><table id="t-tempo"></table></div>
+  </section>
+  <section class="card">
+    <h2>Combinações finais e outros algoritmos</h2>
+    <div class="tw"><table id="t-combinada"></table></div>
+    <div class="tw"><table id="t-outros"></table></div>
+  </section>
+  <section class="card">
+    <h2>As 20 votações usadas como atributos</h2>
+    <div class="tw"><table id="votacoes"></table></div>
+  </section>
+  <section class="card">
+    <h2>Arquivos e reprodução</h2>
+    <ul>
+      <li><a href="entrega/camara_votacoes_2025.arff">entrega/camara_votacoes_2025.arff</a>: a base no formato do WEKA.</li>
+      <li><a href="entrega/Relatorio_Redes_Neurais_WEKA.docx">entrega/Relatorio_Redes_Neurais_WEKA.docx</a>: o relatório completo.</li>
+      <li><a href="dados/resultados.json">dados/resultados.json</a> e <a href="dados/metadados.json">dados/metadados.json</a>: todos os números desta página.</li>
+    </ul>
+    <pre id="cmd"></pre>
+  </section>
+  <footer>Trabalho de Wanderson Honorio Roberto da Silva. Fonte dos dados: Dados Abertos da Câmara dos Deputados. Classificação feita para fins didáticos.</footer>
+</div>
+<script>
+const R = /*RES*/, M = /*META*/;
+const pct = v => v.toFixed(2).replace(".", ",") + "%", num = v => v.toFixed(3).replace(".", ",");
+const best = R.combinada.reduce((a, r) => r.cv.acerto > a.cv.acerto ? r : a);
+document.getElementById("kpis").innerHTML = [
+  [pct(best.cv.acerto), "acerto da melhor rede na validação cruzada"],
+  [pct(R.outros.ZeroR.cv.acerto), "acerto de quem sempre chuta o maior partido"],
+  [M.instancias, "deputados na amostra, de " + M.universo.deputados_com_voto_2025 + " com voto em 2025"],
+  ["20 de " + M.universo.votacoes_com_voto_nominal_2025, "votações nominais de 2025 usadas"]
+].map(([b, s]) => `<div class="kpi"><b>${b}</b><span>${s}</span></div>`).join("");
+const head = `<tr><th>hiddenLayers</th><th class="n">learningRate</th><th class="n">trainingTime</th><th class="n">Treino</th><th class="n">Validação cruzada</th><th class="n">Kappa</th><th class="n">RMSE</th></tr>`;
+for (const g of ["arquitetura", "taxa", "tempo", "combinada"]) {
+  const top = Math.max(...R[g].map(r => r.cv.acerto));
+  document.getElementById("t-" + g).innerHTML = head + R[g].map(r => `<tr class="${r.cv.acerto === top ? "best" : ""}"><td>${r.H}</td><td class="n">${String(r.L).replace(".", ",")}</td><td class="n">${r.N}</td><td class="n">${pct(r.treino.acerto)}</td><td class="n">${pct(r.cv.acerto)}</td><td class="n">${num(r.cv.kappa)}</td><td class="n">${num(r.cv.rmse)}</td></tr>`).join("");
+}
+document.getElementById("t-outros").innerHTML = `<tr><th>Algoritmo</th><th class="n">Treino</th><th class="n">Validação cruzada</th><th class="n">Kappa</th></tr>` +
+  [["ZeroR (sempre o maior partido)", R.outros.ZeroR], ["J48 (árvore de decisão)", R.outros.J48], ["Naive Bayes", R.outros.NaiveBayes], ["MLP escolhida", best]]
+  .map(([n, r], i) => `<tr class="${i === 3 ? "best" : ""}"><td>${n}</td><td class="n">${pct(r.treino.acerto)}</td><td class="n">${pct(r.cv.acerto)}</td><td class="n">${num(r.cv.kappa)}</td></tr>`).join("");
+document.getElementById("classes").innerHTML = `<tr><th>Partido</th><th class="n">Deputados</th><th class="n">Acertos</th><th class="n">Precisão</th><th class="n">Recall</th><th class="n">F1</th></tr>` +
+  best.por_classe.map((c, i) => `<tr><td>${c.classe}</td><td class="n">${M.classes[i].n}</td><td class="n">${best.matriz[i][i]}</td><td class="n">${c.precisao.replace(".", ",")}</td><td class="n">${c.recall.replace(".", ",")}</td><td class="n">${c.f1.replace(".", ",")}</td></tr>`).join("");
+document.getElementById("votacoes").innerHTML = `<tr><th>Atributo</th><th>Proposição</th><th>Data</th><th class="n">Sim</th><th class="n">Não</th></tr>` +
+  M.votacoes.map(v => `<tr><td><code>${v.atributo}</code></td><td>${v.proposicao.replace(/ \(.*/, "")}</td><td>${v.data.split("-").reverse().join("/")}</td><td class="n">${v.sim_amostra}</td><td class="n">${v.nao_amostra}</td></tr>`).join("");
+document.getElementById("cmd").textContent = `java -cp weka.jar weka.classifiers.functions.MultilayerPerceptron \\\n  -t entrega/camara_votacoes_2025.arff -H ${best.H} -L ${best.L} -M 0.2 -N ${best.N} -x 10 -s 1`;
+</script>
+</body>
+</html>

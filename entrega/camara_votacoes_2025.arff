@@ -1,0 +1,440 @@
+% Votacoes nominais do Plenario da Camara dos Deputados - 2025
+% Fonte: Dados Abertos da Camara dos Deputados (https://dadosabertos.camara.leg.br)
+% Cada exemplo e um deputado; cada atributo e o voto dele em uma votacao nominal.
+% Sim / Nao; '?' = ausencia, abstencao, obstrucao ou art. 17.
+% Classe: partido do deputado (os 7 maiores partidos da amostra).
+%
+% pec_prerrogativas_1turno = votacao 2270800-135 (2025-09-16), PEC 3/2021
+% pl_antifaccao_substitutivo = votacao 2579832-62 (2025-11-18), PL 5582/2025
+% pdl_susta_decreto_12466 = votacao 2515648-44 (2025-06-25), PDL 214/2025
+% plp_numero_de_deputados = votacao 2383019-54 (2025-05-06), PLP 177/2023
+% urgencia_pl_anistia = votacao 2562149-7 (2025-09-17), REQ 3834/2025
+% mpv1303_tributacao_aplicacoes_req = votacao 2525180-26 (2025-10-08), MPV 1303/2025
+% pl_streaming_subemenda = votacao 2157806-137 (2025-11-04), PL 8889/2017
+% plp_restos_a_pagar = votacao 2485066-33 (2025-03-18), PLP 22/2025
+% sap1_sustacao_acao_penal = votacao 2494565-52 (2025-05-07), SAP 1/2025
+% sap2_sustacao_acao_penal = votacao 2564763-24 (2025-10-15), SAP 2/2025
+% rec_pl702_processo_penal = votacao 2408145-17 (2025-07-16), PL 702/2023
+% urgencia_pl_invasores_propriedade = votacao 2411961-13 (2025-07-16), PL 8262/2017
+% plp163_limite_despesas_educacao_saude = votacao 2541109-38 (2025-09-24), PLP 163/2025
+% pl1924_desenvolvimento_infantil_emenda2 = votacao 2501358-48 (2025-10-14), PL 1924/2025
+% pl6366_dia_defensores_dh_destaque = votacao 2233324-100 (2025-05-26), PL 6366/2019
+% prc86_glauber_braga_emenda1 = votacao 2595686-31 (2025-12-10), PRC 86/2025
+% rep2_carla_zambelli_parecer = votacao 2525122-81 (2025-12-10), REP 2/2025
+% urgencia_pl_agroecologia = votacao 2579999-8 (2025-11-03), PL 3904/2023
+% pdl3_susta_resolucao_conanda_req = votacao 2482078-54 (2025-11-05), PDL 3/2025
+% pl_dia_acao_climatica = votacao 2438467-47 (2025-02-12), PL 2215/2024
+
+@RELATION camara_votacoes_2025
+
+@ATTRIBUTE pec_prerrogativas_1turno {Sim,Nao}
+@ATTRIBUTE pl_antifaccao_substitutivo {Sim,Nao}
+@ATTRIBUTE pdl_susta_decreto_12466 {Sim,Nao}
+@ATTRIBUTE plp_numero_de_deputados {Sim,Nao}
+@ATTRIBUTE urgencia_pl_anistia {Sim,Nao}
+@ATTRIBUTE mpv1303_tributacao_aplicacoes_req {Sim,Nao}
+@ATTRIBUTE pl_streaming_subemenda {Sim,Nao}
+@ATTRIBUTE plp_restos_a_pagar {Sim,Nao}
+@ATTRIBUTE sap1_sustacao_acao_penal {Sim,Nao}
+@ATTRIBUTE sap2_sustacao_acao_penal {Sim,Nao}
+@ATTRIBUTE rec_pl702_processo_penal {Sim,Nao}
+@ATTRIBUTE urgencia_pl_invasores_propriedade {Sim,Nao}
+@ATTRIBUTE plp163_limite_despesas_educacao_saude {Sim,Nao}
+@ATTRIBUTE pl1924_desenvolvimento_infantil_emenda2 {Sim,Nao}
+@ATTRIBUTE pl6366_dia_defensores_dh_destaque {Sim,Nao}
+@ATTRIBUTE prc86_glauber_braga_emenda1 {Sim,Nao}
+@ATTRIBUTE rep2_carla_zambelli_parecer {Sim,Nao}
+@ATTRIBUTE urgencia_pl_agroecologia {Sim,Nao}
+@ATTRIBUTE pdl3_susta_resolucao_conanda_req {Sim,Nao}
+@ATTRIBUTE pl_dia_acao_climatica {Sim,Nao}
+@ATTRIBUTE partido {PL,PT,UNIAO,PP,REPUBLICANOS,PSD,MDB}
+
+@DATA
+Sim,?,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,?,Nao,Sim,Nao,?,?,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,?,Sim,?,Sim,?,Sim,Nao,?,?,?,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,?,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,?,Nao,Sim,Sim,?,?,Sim,Sim,Sim,Nao,Sim,Nao,?,Sim,?,?,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,?,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+?,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,?,?,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,?,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,?,?,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,?,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,?,?,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,?,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,?,?,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,?,?,?,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,?,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,?,Nao,Nao,?,Nao,?,Nao,PL
+Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,?,Sim,?,PL
+Sim,Nao,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Nao,Sim,Nao,Nao,Sim,?,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,?,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,?,Sim,Sim,?,Nao,Sim,Sim,Sim,Sim,Nao,Sim,?,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,?,?,Sim,Sim,Nao,Nao,?,Sim,?,?,?,Sim,?,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,?,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,Sim,Nao,PL
+?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Sim,Nao,Sim,?,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,?,Sim,Sim,Sim,Sim,Nao,Sim,Nao,?,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,?,Nao,Nao,?,Nao,?,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Nao,Nao,Nao,Sim,Nao,PL
+?,Nao,Sim,Sim,?,?,Sim,Sim,Sim,Sim,?,Nao,Sim,Nao,?,Sim,Nao,Sim,Nao,Sim,PL
+Sim,Sim,?,?,Sim,Sim,Nao,Nao,?,Sim,?,?,Nao,Sim,?,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,?,Sim,Sim,PL
+Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,?,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,?,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,?,Nao,Nao,Nao,?,?,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,?,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,?,Nao,Sim,Sim,?,?,Nao,Sim,Nao,Nao,Nao,?,?,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Nao,Nao,?,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,?,?,Sim,Sim,Sim,Sim,Sim,Nao,?,Nao,Nao,?,?,?,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,?,Sim,Nao,PL
+?,Sim,Sim,?,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,?,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,Sim,Nao,?,Sim,Nao,PL
+Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,?,PL
+Sim,?,Sim,Nao,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,Nao,Nao,?,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Sim,?,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,?,Sim,?,?,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,?,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,?,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Sim,PL
+Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,?,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,Sim,Sim,?,?,Nao,Nao,Nao,?,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Nao,Sim,Nao,Sim,Sim,Nao,?,?,Sim,PL
+Sim,Sim,Sim,Sim,Sim,?,?,?,Sim,Sim,Sim,Sim,?,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,?,?,Nao,?,?,Nao,Sim,?,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,?,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PL
+Sim,Sim,Sim,Nao,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,?,?,?,?,?,?,?,Nao,PL
+Sim,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,?,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,?,PT
+Sim,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,?,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,?,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+?,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,?,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Nao,Nao,Nao,?,Nao,Nao,Sim,Sim,Nao,Nao,Nao,?,Sim,Nao,Sim,Sim,Sim,Sim,Nao,?,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,?,?,?,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Sim,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,?,PT
+Sim,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,?,Nao,Nao,Sim,?,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,?,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Sim,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Sim,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,?,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,?,Sim,?,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Sim,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Nao,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,?,?,Sim,Nao,Sim,?,Sim,Sim,Nao,Sim,PT
+?,Nao,Nao,Sim,?,Nao,?,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Sim,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,?,PT
+Sim,Nao,Nao,?,Nao,?,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,?,Sim,Sim,Nao,Nao,Nao,Nao,?,?,Sim,Sim,Sim,Sim,Nao,?,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,?,Nao,Nao,Nao,Nao,?,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Sim,Nao,Nao,Sim,Nao,Nao,Sim,?,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+?,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Sim,?,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,?,Sim,?,Sim,Sim,Sim,Sim,?,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,?,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Sim,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,?,Sim,?,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,?,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,?,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,?,Sim,PT
+Nao,Nao,Nao,?,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,?,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Sim,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,?,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,?,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,?,Sim,Nao,?,Nao,Nao,?,?,Sim,Sim,Sim,?,?,Sim,PT
+Nao,Nao,Nao,Nao,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+?,Nao,Nao,?,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+Nao,Nao,Nao,Sim,Nao,?,Sim,Sim,Nao,Nao,Nao,?,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,PT
+?,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,?,Sim,Sim,?,Sim,Nao,Nao,Sim,?,?,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,Nao,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,?,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,UNIAO
+Nao,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,Nao,Nao,Sim,Sim,Nao,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Nao,?,?,Sim,?,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Nao,?,Sim,Sim,Nao,?,Nao,Sim,Sim,Sim,Sim,?,?,Sim,Sim,Sim,UNIAO
+Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,?,Sim,Sim,Sim,UNIAO
+Sim,?,Sim,Sim,Nao,Nao,?,Sim,Nao,Nao,Nao,Nao,Sim,Sim,Sim,Sim,Sim,?,?,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,Sim,Sim,?,Sim,Sim,?,Sim,?,?,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,?,Nao,?,Nao,?,Sim,Sim,Nao,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,?,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Nao,Sim,Sim,Sim,UNIAO
+Nao,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Nao,Sim,Nao,Nao,Sim,Sim,Sim,Nao,Sim,?,UNIAO
+Sim,Sim,Sim,?,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Sim,Sim,?,Nao,Nao,Nao,Sim,Nao,UNIAO
+Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,Sim,Nao,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,?,Nao,Sim,Nao,Sim,Sim,Nao,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,?,?,Nao,?,?,Sim,?,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,?,Nao,Nao,Nao,Nao,Sim,?,UNIAO
+Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,Nao,Nao,Nao,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Nao,Sim,?,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,UNIAO
+Sim,Sim,Sim,Sim,Nao,?,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,?,?,?,Nao,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Nao,Sim,Sim,?,Sim,?,Sim,Sim,?,Sim,?,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,?,Sim,Nao,Nao,Nao,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Nao,?,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,UNIAO
+Sim,Sim,Sim,Sim,?,?,Sim,Sim,Sim,?,Nao,Sim,?,Nao,Sim,Nao,Sim,Sim,Sim,?,UNIAO
+Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,?,Sim,Sim,Sim,Sim,Sim,Nao,?,Sim,Sim,?,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Nao,Nao,Sim,?,Sim,Nao,Sim,Sim,?,Nao,Sim,Sim,Sim,Sim,Nao,?,UNIAO
+Nao,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Nao,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Sim,Nao,Sim,Nao,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,UNIAO
+Sim,Nao,?,?,Nao,?,Sim,Sim,?,Nao,?,Sim,Sim,Nao,?,Sim,Sim,Sim,?,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,?,?,?,Sim,Sim,?,UNIAO
+Sim,Sim,Sim,?,Sim,Sim,Sim,?,?,Nao,Sim,?,Nao,Sim,Nao,Sim,?,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,?,?,Nao,?,?,Sim,Sim,?,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,?,?,Nao,Nao,Nao,Nao,Nao,Nao,Sim,Nao,UNIAO
+Sim,Sim,?,Sim,?,Nao,Sim,Sim,Nao,Nao,?,?,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,?,Nao,Sim,Sim,Sim,?,Sim,?,Nao,UNIAO
+Sim,Sim,Sim,Sim,?,Sim,?,Sim,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,?,UNIAO
+Sim,Sim,Sim,?,Sim,Sim,Nao,Sim,Sim,Sim,?,?,?,?,Nao,Nao,?,?,Sim,?,UNIAO
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,?,Sim,Nao,Nao,Nao,Nao,Sim,?,UNIAO
+Sim,?,Sim,Sim,?,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,UNIAO
+Sim,?,Sim,Sim,Sim,Sim,Nao,?,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,?,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,?,Sim,Sim,?,Sim,?,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Nao,?,Nao,UNIAO
+Sim,Sim,Sim,Sim,Sim,?,?,?,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,?,Sim,?,UNIAO
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Sim,Sim,UNIAO
+Nao,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,?,Nao,Nao,Nao,?,?,Nao,UNIAO
+Sim,?,Sim,Nao,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,Sim,Sim,Sim,Sim,Nao,UNIAO
+?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,?,Nao,?,?,Sim,Sim,Sim,Sim,Sim,UNIAO
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,?,Nao,Sim,?,Sim,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,PP
+Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Sim,?,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Nao,?,?,Sim,?,?,Sim,?,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,Sim,?,PP
+Sim,Sim,?,?,Nao,Sim,Sim,?,?,Nao,Nao,?,Sim,Nao,?,Sim,Sim,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,?,Nao,Sim,Nao,PP
+Sim,Sim,?,?,Sim,Sim,Sim,?,?,Sim,?,?,Sim,Sim,?,Sim,Sim,Sim,Sim,?,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,Nao,?,Sim,Sim,Sim,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,Sim,Nao,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Sim,Sim,Nao,PP
+Nao,Sim,Sim,Sim,Nao,?,Sim,Sim,Nao,Nao,?,?,?,?,?,Sim,Sim,?,Nao,?,PP
+Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,Sim,Nao,PP
+Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,?,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,PP
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,?,?,Sim,?,?,Sim,Sim,?,?,?,PP
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,?,Nao,Nao,Sim,Nao,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,PP
+Sim,Sim,Sim,?,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PP
+Sim,Sim,Sim,Sim,Nao,?,Sim,Sim,?,?,Sim,Nao,?,?,Nao,Sim,?,Sim,Sim,Sim,PP
+?,Sim,Sim,Sim,?,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,?,Sim,PP
+Sim,?,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,?,?,?,?,Nao,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,PP
+Sim,?,?,?,Sim,Sim,Sim,?,?,Sim,?,?,Sim,Sim,?,Sim,Sim,Sim,Sim,?,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,Sim,?,Sim,Sim,Sim,?,?,?,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,?,Sim,Sim,Nao,?,Nao,Sim,Sim,Nao,?,Sim,PP
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,?,?,?,PP
+Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,?,Nao,Sim,Sim,?,Sim,Sim,?,Sim,Nao,Sim,PP
+Sim,Sim,Sim,?,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,?,Nao,Nao,Nao,Nao,Sim,?,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,?,Nao,Sim,Nao,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,?,?,Nao,Sim,Sim,Sim,?,?,?,?,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,?,Sim,?,?,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,PP
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,?,Nao,Sim,Nao,PP
+Nao,?,Sim,Sim,Nao,?,Sim,Nao,Sim,?,Nao,Nao,Sim,Nao,Sim,Sim,?,Sim,?,Sim,PP
+Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Nao,?,?,Nao,Sim,Nao,Sim,Nao,Sim,Sim,?,PP
+Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,?,?,Sim,?,PP
+Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,?,?,?,PP
+Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Nao,?,?,PP
+Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,PP
+Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+?,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,Sim,Sim,?,Nao,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Nao,?,Nao,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,?,Nao,Sim,Nao,REPUBLICANOS
+Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,?,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Sim,Nao,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,?,?,Sim,?,Sim,?,?,Sim,Sim,?,?,Sim,?,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Nao,Sim,Sim,Sim,?,?,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,?,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,?,?,Sim,Sim,Nao,?,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,?,?,Sim,Sim,Sim,Sim,?,Sim,?,?,Sim,Sim,?,Sim,?,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,?,Sim,Sim,REPUBLICANOS
+?,Sim,Sim,Sim,?,Nao,Sim,Sim,?,?,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,?,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,Sim,Nao,Sim,?,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Sim,?,REPUBLICANOS
+Sim,?,?,Nao,Sim,Sim,?,Sim,Sim,?,Sim,Sim,Sim,Sim,?,Nao,?,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Nao,Sim,?,?,?,Nao,Sim,Nao,REPUBLICANOS
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,?,Nao,Nao,Nao,Sim,Nao,REPUBLICANOS
+Sim,Sim,Sim,Sim,?,Nao,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,?,?,?,REPUBLICANOS
+Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Nao,Sim,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,?,REPUBLICANOS
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,?,Nao,REPUBLICANOS
+Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,Sim,?,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,?,Sim,Nao,Sim,Sim,?,?,?,Sim,?,Sim,?,Sim,?,Nao,?,?,REPUBLICANOS
+?,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,?,Sim,Sim,Nao,Sim,?,?,?,Nao,Sim,Nao,REPUBLICANOS
+Sim,Sim,Sim,Nao,Sim,?,Sim,?,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Sim,Sim,REPUBLICANOS
+Sim,Sim,Sim,Sim,Sim,Nao,?,?,Sim,Sim,Sim,Sim,Sim,Sim,?,?,?,Nao,?,Sim,REPUBLICANOS
+Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,?,Sim,Nao,Sim,Sim,Sim,Sim,Sim,?,PSD
+Nao,Sim,Sim,Nao,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Nao,?,Sim,Nao,Sim,?,?,PSD
+Sim,Sim,?,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,PSD
+Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,Nao,Sim,Sim,?,Sim,Nao,?,Sim,Sim,?,PSD
+Nao,?,?,Sim,Nao,Nao,Sim,Sim,?,?,Sim,Sim,Sim,Nao,Sim,?,?,Sim,Sim,Sim,PSD
+Nao,Sim,?,Nao,Nao,Nao,Sim,?,Nao,?,Nao,?,Sim,Nao,Sim,Sim,Sim,Sim,?,?,PSD
+Sim,?,Sim,Nao,Sim,?,Sim,?,Sim,?,Sim,Sim,Nao,Nao,Nao,?,?,?,Sim,Nao,PSD
+Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Nao,Sim,Sim,PSD
+Sim,Sim,Sim,Nao,Sim,?,Sim,Sim,Sim,Nao,?,?,?,?,Nao,Sim,?,Nao,Sim,Sim,PSD
+Sim,Sim,?,Sim,Nao,Nao,Sim,Sim,Sim,?,Nao,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,?,PSD
+?,Sim,Sim,Sim,?,Nao,Sim,Sim,Nao,?,Sim,Sim,?,Nao,Nao,Sim,Sim,Sim,Nao,?,PSD
+Sim,Sim,Sim,Nao,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,Nao,Nao,Sim,Sim,PSD
+Sim,Sim,?,Sim,Nao,Nao,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,PSD
+Sim,Sim,Sim,?,Sim,Sim,Sim,?,?,Sim,Nao,Sim,?,Sim,?,?,Nao,Sim,Sim,Sim,PSD
+Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Nao,Sim,Nao,Nao,Sim,Sim,PSD
+?,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Nao,Sim,Nao,?,Nao,?,Sim,Nao,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,?,?,Nao,Sim,?,PSD
+Sim,Sim,?,Sim,Nao,Nao,Sim,Sim,?,?,Nao,Sim,Sim,Nao,Sim,Sim,Nao,?,Sim,Sim,PSD
+Nao,Sim,Sim,Nao,Sim,Nao,?,Sim,?,?,Sim,Sim,Nao,Nao,?,Sim,?,Sim,Sim,Sim,PSD
+Nao,Sim,?,Sim,Nao,?,Sim,Sim,Nao,?,Nao,?,Sim,?,Sim,Sim,Sim,Sim,?,Sim,PSD
+Nao,Sim,Sim,Sim,Sim,?,Sim,?,Sim,?,Nao,Sim,Sim,?,Sim,?,?,Sim,Sim,?,PSD
+Sim,Sim,?,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,Nao,Sim,Sim,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,?,?,Nao,Sim,Nao,Nao,Nao,Nao,Sim,?,PSD
+Sim,Sim,?,Sim,Nao,Nao,Sim,Sim,Nao,?,Sim,Sim,Sim,Nao,?,Sim,Sim,Sim,Sim,?,PSD
+Nao,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,?,Nao,Sim,Sim,Nao,Sim,Sim,?,PSD
+Nao,Sim,?,Nao,Sim,Sim,Sim,?,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Nao,?,Nao,Sim,Sim,PSD
+Sim,?,?,Sim,Nao,Nao,Sim,Sim,Nao,Sim,Nao,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,?,Sim,Sim,Sim,PSD
+Nao,Sim,?,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Nao,Sim,?,?,Nao,Sim,Sim,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Nao,Sim,?,Sim,Sim,PSD
+Sim,Sim,?,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Sim,Sim,?,Nao,?,Nao,Sim,Sim,Sim,Sim,PSD
+Sim,Sim,Sim,Sim,Nao,Nao,Sim,Nao,?,?,Sim,Sim,?,Nao,?,Sim,Sim,?,Sim,?,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Sim,Nao,Nao,Sim,Sim,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,?,Sim,?,Sim,?,Nao,Nao,Nao,Sim,Nao,PSD
+Nao,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,?,Nao,Nao,Sim,Nao,Sim,Sim,?,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PSD
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,PSD
+Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,Nao,Sim,?,PSD
+Nao,Sim,Sim,Nao,?,Nao,Sim,Sim,Nao,Nao,Nao,Sim,Sim,Nao,Sim,Sim,?,?,Sim,Sim,PSD
+Sim,Sim,?,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Sim,?,?,Sim,Nao,Sim,Sim,Sim,PSD
+Nao,?,Sim,Sim,Sim,Nao,?,?,Sim,Sim,Sim,Sim,Nao,Nao,Sim,?,?,Nao,Sim,Sim,PSD
+Nao,Sim,?,Sim,?,Nao,Sim,Sim,?,?,Sim,Sim,Sim,?,Sim,?,?,Sim,Sim,?,PSD
+Sim,Sim,Sim,Sim,?,?,Sim,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,MDB
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,?,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,MDB
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,?,Nao,Sim,Sim,Nao,Nao,Sim,?,MDB
+Sim,Sim,Sim,Sim,Nao,?,?,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,MDB
+Sim,Sim,Sim,Sim,Nao,?,Sim,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Sim,Sim,?,MDB
+Nao,Sim,Sim,Nao,Nao,?,Sim,?,Sim,?,?,Sim,Sim,?,?,?,Sim,?,Sim,?,MDB
+Sim,Sim,Sim,Sim,?,Nao,Sim,Sim,?,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,MDB
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Nao,?,Nao,?,Nao,Nao,Sim,Nao,MDB
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Sim,Sim,?,Sim,Sim,?,Nao,Sim,?,MDB
+Nao,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,?,MDB
+Sim,Sim,Sim,Nao,Sim,?,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,?,?,Sim,?,MDB
+Sim,?,Sim,Nao,Nao,?,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Nao,Nao,?,?,Sim,Sim,Sim,MDB
+?,?,Nao,Sim,?,?,?,Sim,Nao,Nao,?,Sim,Sim,Nao,?,Sim,?,Sim,Nao,Sim,MDB
+Nao,Sim,Nao,Sim,Nao,Nao,Sim,Sim,?,Nao,Nao,?,Sim,Sim,Sim,Sim,Sim,?,?,Sim,MDB
+Sim,Sim,Sim,Nao,Nao,Nao,Nao,Sim,Nao,Sim,Sim,Nao,Sim,Nao,Sim,?,Sim,Nao,Sim,?,MDB
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Sim,Sim,Nao,MDB
+Sim,?,Sim,Sim,?,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,?,Sim,?,MDB
+Sim,Sim,Sim,Sim,?,Nao,Nao,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,Nao,Sim,?,?,Sim,MDB
+Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,?,?,Sim,Sim,?,?,Sim,Nao,Sim,Sim,Sim,Sim,MDB
+Sim,Sim,?,Sim,Nao,Nao,Sim,Sim,Sim,?,Nao,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Sim,Sim,MDB
+Sim,Sim,Sim,Sim,Nao,Nao,Sim,?,Sim,Nao,?,Sim,Sim,?,?,Sim,Sim,?,Sim,?,MDB
+?,Nao,Sim,Sim,?,Nao,Sim,Sim,Nao,Nao,Nao,?,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,MDB
+Sim,?,Sim,Sim,Nao,Nao,?,?,Sim,?,?,Sim,Sim,Nao,Sim,Sim,Sim,?,?,Nao,MDB
+Sim,Sim,Sim,Sim,Sim,?,Sim,Sim,Sim,?,Sim,Sim,Sim,Nao,Sim,?,?,?,?,Sim,MDB
+Nao,Sim,Sim,Sim,Sim,Nao,Sim,?,Sim,?,Sim,Sim,?,?,?,?,?,?,Sim,Nao,MDB
+Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Nao,Sim,Sim,?,?,Sim,Sim,MDB
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,?,Sim,Sim,Nao,Sim,Sim,Sim,Nao,Nao,Nao,?,Sim,Nao,MDB
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,?,MDB
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,?,Sim,?,?,Nao,Sim,Nao,MDB
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Sim,Nao,Nao,?,?,Sim,Sim,Sim,MDB
+Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Sim,?,?,Sim,Sim,?,Nao,Sim,?,Nao,Sim,?,MDB
+Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,Sim,?,Sim,Nao,Sim,Nao,Nao,Sim,Nao,MDB
+Nao,Sim,Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Sim,?,Sim,Nao,Sim,Nao,?,Sim,Nao,MDB
+Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Sim,Nao,Sim,Nao,Nao,Nao,Nao,Sim,Nao,MDB
+Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Nao,Nao,Nao,Sim,?,Nao,Sim,Sim,Sim,Sim,Sim,Sim,MDB
+Sim,Sim,Sim,Sim,Sim,?,?,Sim,Sim,?,?,Sim,Sim,?,Nao,Sim,?,?,Sim,Sim,MDB
+Sim,Sim,Sim,Sim,?,?,?,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,?,?,?,?,?,MDB
+Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Nao,?,Sim,Sim,Sim,Sim,Sim,MDB
+Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,Sim,Sim,Nao,Nao,Sim,Nao,Nao,Sim,?,MDB
+Sim,Sim,Sim,Nao,Sim,Sim,Sim,?,Sim,Sim,Sim,Sim,Sim,Sim,Nao,?,?,Nao,Sim,?,MDB
+Sim,Sim,Sim,Sim,Nao,Nao,Sim,Sim,Sim,Nao,Sim,Sim,Sim,Nao,Sim,Sim,?,Sim,Sim,Nao,MDB
